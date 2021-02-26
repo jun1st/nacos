@@ -1,12 +1,11 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.alibaba.nacos.config.server.constant;
 
 import org.junit.Assert;
@@ -27,17 +27,11 @@ import static com.alibaba.nacos.config.server.constant.Constants.HISTORY_CONTROL
 import static com.alibaba.nacos.config.server.constant.Constants.LISTENER_CONTROLLER_PATH;
 import static com.alibaba.nacos.config.server.constant.Constants.NAMESPACE_CONTROLLER_PATH;
 
-/**
- * {@link Constants} Test
- *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since 0.2.2
- */
 public class ConstantsTest {
-
+    
     @Test
     public void testControllerPathsDefaultValues() {
-
+        
         Assert.assertEquals("/v1/cs/capacity", CAPACITY_CONTROLLER_PATH);
         Assert.assertEquals("/v1/cs/communication", COMMUNICATION_CONTROLLER_PATH);
         Assert.assertEquals("/v1/cs/configs", CONFIG_CONTROLLER_PATH);
